@@ -1,0 +1,80 @@
+[
+    {
+        "label":  "Search",
+        "fields":  [
+                       {
+                           "key":  "searchcontact",
+                           "templateOptions":  {
+                                                   "label":  "Search"
+                                               },
+                           "type":  "input",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  false
+                       },
+                       {
+                           "key":  "selectedcontact",
+                           "templateOptions":  {
+                                                   "label":  "Select contact",
+                                                   "required":  true,
+                                                   "grid":  {
+                                                                "columns":  [
+                                                                                {
+                                                                                    "headerName":  "Display Name",
+                                                                                    "field":  "DisplayName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Emailaddress",
+                                                                                    "field":  "Emailaddress"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Alias",
+                                                                                    "field":  "Alias"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "First Name",
+                                                                                    "field":  "FirstName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Initials",
+                                                                                    "field":  "Initials"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "Last Name",
+                                                                                    "field":  "LastName"
+                                                                                },
+                                                                                {
+                                                                                    "headerName":  "DN",
+                                                                                    "field":  "DN"
+                                                                                }
+                                                                            ],
+                                                                "height":  300,
+                                                                "rowSelection":  "single"
+                                                            },
+                                                   "dataSourceConfig":  {
+                                                                            "dataSourceGuid":  "$dataSourceGuid_0",
+                                                                            "input":  {
+                                                                                          "propertyInputs":  [
+                                                                                                                 {
+                                                                                                                     "propertyName":  "searchvalue",
+                                                                                                                     "otherFieldValue":  {
+                                                                                                                                             "otherFieldKey":  "searchcontact"
+                                                                                                                                         }
+                                                                                                                 }
+                                                                                                             ]
+                                                                                      }
+                                                                        },
+                                                   "useFilter":  true,
+                                                   "useDefault":  false,
+                                                   "searchPlaceHolder":  "Search this data"
+                                               },
+                           "type":  "grid",
+                           "summaryVisibility":  "Show",
+                           "requiresTemplateOptions":  true,
+                           "requiresKey":  true,
+                           "requiresDataSource":  true
+                       }
+                   ]
+    }
+]
